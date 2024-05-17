@@ -16,8 +16,8 @@ resource "azurerm_service_plan" "george" {
   name                = each.value.name
   resource_group_name = azurerm_resource_group.george_ibrahim.name
   location            = azurerm_resource_group.george_ibrahim.location
-  os_type             = "Windows"
-  sku_name            = "P1v2"
+  os_type             = each.value.os_type
+  sku_name            = each.value.sku_name
 }
 
 resource "azurerm_linux_web_app" "george1980" {
