@@ -29,4 +29,7 @@ variable "client_secret"{
 variable "tenant_id"{
   type=string
 }
-
+variable "dev"{
+ type=string
+ default="dev"
+}
