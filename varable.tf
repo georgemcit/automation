@@ -1,3 +1,4 @@
+/*
 locals{
   window_app=[for f in fileset("${path.module}/${var.windowsconfig}", "[^_]*.yaml") : yamldecode(file("${path.module}/${var.windowsconfig}/${f}"))]
   window_app_list = flatten([
@@ -30,3 +31,4 @@ resource "azurerm_linux_web_app" "windowsbatcha06webapp" {
 
   site_config {}
 }
+*/
