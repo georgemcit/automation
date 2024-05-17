@@ -20,7 +20,7 @@ resource "azurerm_service_plan" "george" {
   sku_name            = each.value.sku_name
 }
 
-resource "azurerm_azurerm_windows_web_app" "george1980" {
+resource "azurerm_windows_web_app" "george1980" {
   for_each            = azurerm_service_plan.george
   name                = each.value.name
   resource_group_name = azurerm_resource_group.george_ibrahim.name
