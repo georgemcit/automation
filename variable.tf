@@ -23,7 +23,7 @@ resource "azurerm_windows_web_app" "george1980" {
   name                = "george1980"
   resource_group_name = azurerm_resource_group.george_ibrahim.name
   location            = azurerm_service_plan.george_ibrahim.location
-  service_plan_id     = azurerm_service_plan.george.id
+  service_plan_id     = each.value.id
 
   site_config {}
 }
