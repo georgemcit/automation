@@ -20,7 +20,7 @@ resource "azurerm_service_plan" "george" {
    os_type             = "Windows"
 }
 
-resource "azurerm_linux_web_app" "george1980" {
+resource "azurerm_windwos_web_app" "george1980" {
   for_each            = azurerm_service_plan.george
   name                = each.value.name
   resource_group_name = azurerm_resource_group.george_ibrahim.name
