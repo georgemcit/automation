@@ -18,6 +18,7 @@ resource "azurerm_service_plan" "george" {
   location            = azurerm_resource_group.george_ibrahim.location
    sku_name            = "P1v2"
    os_type             = "Windows"
+}
 
 resource "azurerm_linux_web_app" "george1980" {
   for_each            = azurerm_service_plan.george
