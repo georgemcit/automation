@@ -1,10 +1,10 @@
 listofwindowsapp:
   - name: firstwindowsapp    
-    os_type: Linux
+    os_type: windows
     sku_name: P1v2
   - name: secondwindowsapp    
-    os_type: Linux
+    os_type: windows
     sku_name: EP1
   - name: thirdwindowsapp    
-    os_type: Linux
+    os_type: windows
     sku_name: WS1
