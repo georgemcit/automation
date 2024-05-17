@@ -20,7 +20,7 @@ resource "azurerm_service_plan" "george" {
 }
 
 resource "azurerm_windows_web_app" "george1980" {
-  name                = azurerm_service_plan.george
+  for_each                 = azurerm_service_plan_plan.george
   resource_group_name = azurerm_resource_group.george_ibrahim.name
   location            = azurerm_service_plan.george_ibrahim.location
   service_plan_id     = each.value.id
