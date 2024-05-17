@@ -11,5 +11,5 @@ output "sku_window_app" {
   value=[for app in local.window_app_list : app.sku_name]
 }
 output "dev" {
-  value = var.vev
+  value = var.dev
 }
